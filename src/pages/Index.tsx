@@ -1,12 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React from 'react';
+import Navbar from '../components/layout/Navbar';
+import Hero from '../components/home/Hero';
+import DigitalLearning from '../components/home/DigitalLearning';
+import BusinessLanguage from '../components/home/BusinessLanguage';
+import ApplicationForm from '../components/home/ApplicationForm';
+import Footer from '../components/layout/Footer';
+
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navbar />
+      <main>
+        <Hero />
+        <DigitalLearning />
+        <BusinessLanguage />
+        <ApplicationForm />
+      </main>
+      <Footer />
     </div>
   );
 };
